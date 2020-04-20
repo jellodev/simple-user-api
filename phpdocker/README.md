@@ -2,12 +2,12 @@
 https://phpdocker.io/generator
 
 [set value]
-Project Name: user-backpacer
-Base Port: 18080 (원하는 포트)
-Application Type: Generic ((default))
-Max Upload Size: 200 MB
-PHP Version: 7.4 (default)
-Enable MySQL: yes (default)
+* Project Name: user-backpacer
+* Base Port: 18080 (원하는 포트)
+* Application Type: Generic ((default))
+* Max Upload Size: 200 MB
+* PHP Version: 7.4 (default)
+* Enable MySQL: yes (default)
 
 하단의 [Generate Project Archive Botton] click -> download zip file
 
