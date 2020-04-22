@@ -31,11 +31,11 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => 'localhost',
+		'hostname' => '172.21.0.3',
 		'username' => 'user',
 		'password' => 'nicebpker',
-		'database' => 'info_s',
-		'DBDriver' => 'MySQLi',
+		'database' => 'user',
+		'DBDriver' => 'mysqli',
 		'DBPrefix' => '',
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -48,7 +48,7 @@ class Database extends \CodeIgniter\Database\Config
 		'compress' => false,
 		'strictOn' => false,
 		'failover' => [],
-		'port'     => 33060,
+		'port'     => 3306,
 	];
 
 	/**
@@ -59,11 +59,11 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $tests = [
 		'DSN'      => '',
-		'hostname' => '127.0.0.1',
-		'username' => '',
-		'password' => '',
-		'database' => ':memory:',
-		'DBDriver' => 'SQLite3',
+		'hostname' => '172.21.0.3',
+		'username' => 'user',
+		'password' => 'nicebpker',
+		'database' => 'user',
+		'DBDriver' => 'mysqli',
 		'DBPrefix' => 'db_',  // Needed to ensure we're working correctly with prefixes live. DO NOT REMOVE FOR CI DEVS
 		'pConnect' => false,
 		'DBDebug'  => (ENVIRONMENT !== 'production'),
@@ -84,29 +84,6 @@ class Database extends \CodeIgniter\Database\Config
 	public function __construct()
 	{
 		parent::__construct();
-
-		// Ensure that we always set the database group to 'tests' if
-		// we are currently running an automated test suite, so that
-		// we don't overwrite live data on accident.
-		if (ENVIRONMENT === 'testing')
-		{
-			$this->defaultGroup = 'tests';
-
-			// Under Travis-CI, we can set an ENV var named 'DB_GROUP'
-			// so that we can test against multiple databases.
-			if ($group = getenv('DB'))
-			{
-				if (is_file(TESTPATH . 'travis/Database.php'))
-				{
-					require TESTPATH . 'travis/Database.php';
-
-					if (! empty($dbconfig) && array_key_exists($group, $dbconfig))
-					{
-						$this->tests = $dbconfig[$group];
-					}
-				}
-			}
-		}
 	}
 
 	//--------------------------------------------------------------------

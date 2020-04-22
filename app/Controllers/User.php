@@ -13,76 +13,66 @@ use CodeIgniter\Controller;
  * login accesskey 
  * pw 암호화
  * login logout 처리는 무엇으로 할까? 
+ * email name 부분검색 허용?
  */
+
+$debugmode = true;
+
+if($debugmode)
+    error_reporting(E_ALL); ini_set("display_errors", 1);
+
+function reply_json($s){
+    echo json_encode($s, JSON_UNESCAPED_UNICODE);
+}
+
 class User extends Controller
 {
-    //fetch
-    public function index()
-    {
-        $model = new UserModel();
+    public function getbyid(){
+        $params = $_REQUEST;
+        try{
+            if(!$params['id'])
+                throw new \Exception("needed valid params");
+            $model = new UserModel();
+            $data=$model->get($params['id']);
 
-        $data = [
-            'users'  => [], //user fetch
-            //'users'  => $model->getUser(), //user fetch
-            'accesskey' => 'valid access!', // accesskey?
-        ];
-        print_r($data);
-        //echo view('templates/header', $data);
-        //echo view('user/list', $data);
-        //echo view('templates/footer', $data);
-    }
-    // 한명만 
-    public function view($id = null)
-    {
-        $model = new UserModel();
+            if(empty($data['user']))
+                throw new \Exception('Cannot find the user');
 
-        //$data['user'] = $model->getUser($id);
-        $data['user'] = 'mihee';
-        if (empty($data['user']))
-        {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException('Cannot find the user: '. $id);
+            reply_json($data);
+        }catch(\Exception $e){
+            print_r($e->getMessage());
+        }    
+    }  
+
+    public function fetch(){
+        try {
+            $model = new UserModel();
+            $users = $model->fetch($_REQUEST);
+            reply_json($users);
+        } catch (\Exception $e) {
+            print_r($e->getMessage());
         }
-        print_r($data);
-        //echo view('templates/header', $data);
-        //echo view('user/list', $data);
-        //echo view('templates/footer', $data);
     }
-    //put - insert 
-    public function create()
-    {
+
+    public function create(){
         $model = new UserModel();
         $params = $_REQUEST;
-        // 유효성체크 - 되나확인하기(form만 될수도)
-        if (! $this->validate([
-            'name' => 'required|max_length[20]',
-            'nickname'  => 'required|max_length[30]',
-            'password' => 'required|min_length[10]|max_length[20]',
-            'tel' => 'required|max_length[20]',
-            'email' => 'required|max_length[100]',
-            //'gender' => 'max_length[1]'
-        ])){
-            echo "유효성 탈락!!";
+        $data = [
+            'name' => $params['name'],
+            'nickname'  => $params['nickname'],
+            'password'  => $params['password'], 
+            'tel'  => $params['tel'],
+            'email'  => $params['email'],
+            'gender'  => $params['gender']
+        ];
+        if ($model->save($data) === false){
+            echo reply_json(['errors' => $model->errors()]);
         }else{
-            echo "post in";
-            $result=$model->save([
-                'title' => $params['name'],
-                'nickname'  => $params['nickname'],
-                'password'  => $params['password'], 
-                'tel'  => $params['tel'],
-                'email'  => $params['email'],
-                'gender'  => $params['gender']
-            ]);
-            print_r($result);
-            //echo view('user/success');
-        }
+            echo reply_json(['success' => '200']);
+        }       
     }
-    //login
-    public function login(){
-
+    //fetch
+    public function index(){
+        echo "index";
     }
-    //logout
-    public function logout(){
-
-    }
-
 }

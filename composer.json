@@ -6,12 +6,14 @@
     "license": "MIT",
     "require": {
         "php": ">=7.2",
+        "ext-mysqli": "*",
         "ext-curl": "*",
         "ext-intl": "*",
         "ext-json": "*",
         "kint-php/kint": "^3.3",
         "psr/log": "^1.1",
-        "laminas/laminas-escaper": "^2.6"
+        "laminas/laminas-escaper": "^2.6",
+        "firebase/php-jwt": "*"
     },
     "require-dev": {
         "codeigniter4/codeigniter4-standard": "^1.0",
