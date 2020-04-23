@@ -1,0 +1,934 @@
+CRITICAL - 2020-04-23 03:54:56 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(68): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 03:55:15 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(68): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 03:58:42 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 03:58:54 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:14:48 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:14:53 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:17:30 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:19:04 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:20:24 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(288): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(176): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 04:21:07 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(280): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(176): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:21:52 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(280): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(176): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:22:36 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(280): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(176): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:22:40 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(280): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(176): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:28:27 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(278): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(174): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:33:46 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(278): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(174): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:35:14 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\User->getbyid()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 04:35:42 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\User->getbyid()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 04:36:26 --> Cannot use object of type CodeIgniter\Database\MySQLi\Result as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\User->getbyid()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 04:46:05 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(278): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(174): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:46:38 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(278): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(174): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(70): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 04:53:00 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(279): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 05:49:41 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(279): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 05:49:50 --> Table 'user.users' doesn't exist
+#0 /application/system/Database/mysqli/Connection.php(330): mysqli->query()
+#1 /application/system/Database/BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /application/system/Database/BaseBuilder.php(1819): CodeIgniter\Database\BaseConnection->query()
+#4 /application/system/Validation/Rules.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /application/system/Validation/Validation.php(279): CodeIgniter\Validation\Rules->is_unique()
+#6 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#7 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#8 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#9 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#10 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#11 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#12 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#13 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#14 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#15 {main}
+CRITICAL - 2020-04-23 05:50:14 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 05:50:28 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 05:50:38 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 05:51:34 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(69): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 05:56:47 --> Argument 1 passed to CodeIgniter\Model::findAll() must be of the type int, string given, called in /application/app/Models/UserModel.php on line 60
+#0 /application/app/Models/UserModel.php(60): CodeIgniter\Model->findAll()
+#1 /application/app/Controllers/User.php(50): App\Models\UserModel->fetch()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\User->fetch()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 11:56:59 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:57:45 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:57:59 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:58:22 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:58:39 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:59:02 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:59:11 --> Call to undefined function App\Controllers\makeToken()
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 11:59:31 --> Class 'App\Controllers\Date' not found
+#0 /application/app/Controllers/Auth.php(38): App\Controllers\Auth->makeToken()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:00:07 --> Class 'App\Controllers\date' not found
+#0 /application/app/Controllers/Auth.php(38): App\Controllers\Auth->makeToken()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:00:19 --> Call to undefined function App\Controllers\now()
+#0 /application/app/Controllers/Auth.php(38): App\Controllers\Auth->makeToken()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:00:37 --> Class 'App\Controllers\Date' not found
+#0 /application/app/Controllers/Auth.php(38): App\Controllers\Auth->makeToken()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->login()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:10:08 --> get_headers(): This function may only be used against URLs
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(54): get_headers()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 12:10:42 --> get_headers(): This function may only be used against URLs
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(54): get_headers()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 12:10:48 --> get_headers(): This function may only be used against URLs
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(54): get_headers()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 12:13:09 --> Undefined variable: message
+#0 /application/app/Controllers/Auth.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:19:13 --> Undefined variable: headers
+#0 /application/app/Controllers/Auth.php(54): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:21:20 --> Undefined index: Authorization
+#0 /application/app/Controllers/Auth.php(55): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:23:16 --> Undefined index: Authorization
+#0 /application/app/Controllers/Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:23:58 --> Undefined index: Authorization
+#0 /application/app/Controllers/Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:24:13 --> Undefined index: Authorization
+#0 /application/app/Controllers/Auth.php(56): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:24:34 --> Undefined variable: accessToken
+#0 /application/app/Controllers/Auth.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:24:55 --> Call to a member function toString() on string
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 12:25:14 --> Call to a member function toString() on string
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 12:25:32 --> Undefined variable: accessToken
+#0 /application/app/Controllers/Auth.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:25:40 --> Undefined variable: accessToken
+#0 /application/app/Controllers/Auth.php(61): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:26:12 --> Object of class stdClass could not be converted to int
+#0 /application/app/ThirdParty/jwt/src/JWT.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(85): Firebase\JWT\JWT::decode()
+#2 /application/app/Controllers/Auth.php(58): App\Controllers\Auth->decodeToken()
+#3 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#4 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#5 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#6 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-04-23 12:26:45 --> Object of class stdClass could not be converted to int
+#0 /application/app/ThirdParty/jwt/src/JWT.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(86): Firebase\JWT\JWT::decode()
+#2 /application/app/Controllers/Auth.php(59): App\Controllers\Auth->decodeToken()
+#3 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#4 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#5 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#6 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-04-23 12:26:59 --> Object of class stdClass could not be converted to int
+#0 /application/app/ThirdParty/jwt/src/JWT.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(86): Firebase\JWT\JWT::decode()
+#2 /application/app/Controllers/Auth.php(59): App\Controllers\Auth->decodeToken()
+#3 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#4 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#5 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#6 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-04-23 12:28:33 --> Object of class stdClass could not be converted to int
+#0 /application/app/ThirdParty/jwt/src/JWT.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(86): Firebase\JWT\JWT::decode()
+#2 /application/app/Controllers/Auth.php(59): App\Controllers\Auth->decodeToken()
+#3 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#4 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#5 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#6 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-04-23 12:30:18 --> Object of class stdClass could not be converted to int
+#0 /application/app/ThirdParty/jwt/src/JWT.php(136): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(86): Firebase\JWT\JWT::decode()
+#2 /application/app/Controllers/Auth.php(59): App\Controllers\Auth->decodeToken()
+#3 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#4 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#5 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#6 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2020-04-23 12:40:46 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(58): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:44:04 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:44:27 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:44:44 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(57): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:50:39 --> Cannot call constructor
+#0 /application/system/CodeIgniter.php(882): App\Controllers\Auth->__construct()
+#1 /application/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 12:50:49 --> Undefined property: App\Controllers\Auth::$load
+#0 /application/app/Controllers/Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(882): App\Controllers\Auth->__construct()
+#2 /application/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:51:50 --> Undefined property: App\Controllers\Auth::$load
+#0 /application/app/Controllers/Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(882): App\Controllers\Auth->__construct()
+#2 /application/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 12:55:08 --> Undefined property: App\Controllers\Auth::$load
+#0 /application/app/Controllers/Auth.php(25): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(882): App\Controllers\Auth->__construct()
+#2 /application/system/CodeIgniter.php(393): CodeIgniter\CodeIgniter->createController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:30:25 --> syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$'
+#0 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /application/system/CodeIgniter.php(861): class_exists()
+#5 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#7 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-04-23 13:30:31 --> syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$'
+#0 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /application/system/CodeIgniter.php(861): class_exists()
+#5 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#7 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-04-23 13:30:43 --> syntax error, unexpected '}', expecting variable (T_VARIABLE) or '{' or '$'
+#0 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /application/system/CodeIgniter.php(861): class_exists()
+#5 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#7 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-04-23 13:35:47 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:36:40 --> Use of undefined constant sub - assumed 'sub' (this will throw an Error in a future version of PHP)
+#0 /application/app/Controllers/Auth.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:37:05 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:37:12 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:37:26 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:37:53 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+#0 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /application/system/CodeIgniter.php(861): class_exists()
+#5 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#7 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-04-23 13:38:00 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:38:08 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:38:50 --> Cannot use object of type stdClass as array
+#0 /application/system/CodeIgniter.php(910): App\Controllers\Auth->refreshToken()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-23 13:43:45 --> Undefined index: gender
+#0 /application/app/Controllers/User.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:44:01 --> Undefined index: gender
+#0 /application/app/Controllers/User.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:44:08 --> Undefined index: gender
+#0 /application/app/Controllers/User.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:44:50 --> Undefined index: gender
+#0 /application/app/Controllers/User.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:44:54 --> Undefined index: gender
+#0 /application/app/Controllers/User.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 13:48:52 --> syntax error, unexpected ')', expecting ']'
+#0 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#1 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#3 [internal function]: spl_autoload_call()
+#4 /application/system/CodeIgniter.php(861): class_exists()
+#5 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#6 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#7 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2020-04-23 14:36:54 --> Undefined variable: db
+#0 /application/app/Controllers/Auth.php(70): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 14:37:06 --> Undefined variable: db
+#0 /application/app/Controllers/Auth.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 14:37:36 --> Undefined property: App\Controllers\Auth::$db
+#0 /application/app/Controllers/Auth.php(71): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 14:38:11 --> Undefined variable: authHeader
+#0 /application/app/Controllers/Auth.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 14:38:15 --> Undefined variable: authHeader
+#0 /application/app/Controllers/Auth.php(60): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2020-04-23 14:38:30 --> Undefined property: App\Controllers\Auth::$db
+#0 /application/app/Controllers/Auth.php(73): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 14:39:20 --> Undefined property: App\Controllers\Auth::$load
+#0 /application/app/Controllers/Auth.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 14:39:37 --> Undefined property: App\Controllers\Auth::$load
+#0 /application/app/Controllers/Auth.php(72): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/app/Controllers/Auth.php(60): App\Controllers\Auth->isBlacklistToken()
+#2 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#3 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#4 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#5 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2020-04-23 15:31:54 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(66): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 15:32:02 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(66): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 15:48:40 --> {0} is not a valid rule.
+#0 /application/system/Validation/Validation.php(287): CodeIgniter\Validation\Exceptions\ValidationException::forRuleNotFound()
+#1 /application/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#2 /application/system/Model.php(1434): CodeIgniter\Validation\Validation->run()
+#3 /application/system/Model.php(694): CodeIgniter\Model->validate()
+#4 /application/system/Model.php(550): CodeIgniter\Model->insert()
+#5 /application/app/Controllers/User.php(66): CodeIgniter\Model->save()
+#6 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#7 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2020-04-23 16:14:05 --> Object of class App\Models\AccessTokenModel could not be converted to string
+#0 /application/system/Database/Query.php(443): strtr()
+#1 /application/system/Database/Query.php(404): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /application/system/Database/Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\Query->getQuery()
+#4 /application/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query()
+#5 /application/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#6 /application/app/Models/AccessTokenModel.php(39): CodeIgniter\Model->insert()
+#7 /application/app/Controllers/Auth.php(68): App\Models\AccessTokenModel->insertBlacklist()
+#8 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#9 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#10 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#11 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-04-23 16:23:19 --> Object of class App\Models\AccessTokenModel could not be converted to string
+#0 /application/system/Database/Query.php(443): strtr()
+#1 /application/system/Database/Query.php(404): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /application/system/Database/Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\Query->getQuery()
+#4 /application/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query()
+#5 /application/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#6 /application/app/Models/AccessTokenModel.php(41): CodeIgniter\Model->insert()
+#7 /application/app/Controllers/Auth.php(67): App\Models\AccessTokenModel->insertBlacklist()
+#8 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#9 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#10 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#11 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-04-23 16:23:54 --> Object of class App\Models\AccessTokenModel could not be converted to string
+#0 /application/system/Database/Query.php(443): strtr()
+#1 /application/system/Database/Query.php(404): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /application/system/Database/Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\Query->getQuery()
+#4 /application/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query()
+#5 /application/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#6 /application/app/Models/AccessTokenModel.php(40): CodeIgniter\Model->insert()
+#7 /application/app/Controllers/Auth.php(67): App\Models\AccessTokenModel->insertBlacklist()
+#8 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#9 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#10 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#11 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-04-23 16:24:02 --> Object of class App\Models\AccessTokenModel could not be converted to string
+#0 /application/system/Database/Query.php(443): strtr()
+#1 /application/system/Database/Query.php(404): CodeIgniter\Database\Query->matchNamedBinds()
+#2 /application/system/Database/Query.php(197): CodeIgniter\Database\Query->compileBinds()
+#3 /application/system/Database/BaseConnection.php(666): CodeIgniter\Database\Query->getQuery()
+#4 /application/system/Database/BaseBuilder.php(2206): CodeIgniter\Database\BaseConnection->query()
+#5 /application/system/Model.php(722): CodeIgniter\Database\BaseBuilder->insert()
+#6 /application/app/Models/AccessTokenModel.php(40): CodeIgniter\Model->insert()
+#7 /application/app/Controllers/Auth.php(68): App\Models\AccessTokenModel->insertBlacklist()
+#8 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#9 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#10 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#11 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2020-04-23 16:24:26 --> Object of class App\Models\AccessTokenModel could not be converted to string
+#0 /application/app/Controllers/Auth.php(68): App\Models\AccessTokenModel->insertBlacklist()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\Auth->logout()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

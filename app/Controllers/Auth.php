@@ -1,13 +1,9 @@
 <?php namespace App\Controllers;
-require_once  APPPATH .'ThirdParty/jwt/src/BeforeValidException.php';
-require_once  APPPATH .'ThirdParty/jwt/src/ExpiredException.php';
-require_once  APPPATH .'ThirdParty/jwt/src/SignatureInvalidException.php';
-require_once  APPPATH .'ThirdParty/jwt/src/JWT.php';
-
 
 use App\Models\UserModel;
+use App\Models\AccessTokenModel;
 use CodeIgniter\Controller;
-use \Firebase\JWT\JWT;
+
 
 $debugmode = true;
 
@@ -20,45 +16,93 @@ function reply_json($s){
 
 class Auth extends Controller
 {
+    /**
+     * 회원 로그인 
+     * 성공 시 토큰 리턴 
+     */ 
     public function login(){
         $stranger = $_REQUEST;        
         try {
             if(!isset($stranger['email']) || !isset($stranger['password']))
-                throw new \Exception('needed valid params');
+                throw new \Exception('invalid request');
 
             $user = new UserModel();
             $customer = $user->getbyemail($stranger['email']);
-            
+
             if(!$customer)
-                throw new \Exception('cannot find user');
+                throw new \Exception('Not Found');
 
             if(password_verify($stranger['password'], $customer['password'])){
-                unset($customer['password']);
-                reply_json($customer);
+                $accessToken = new AccessTokenModel();
+                $token = $accessToken->make($customer['id']);
+                reply_json($token);
             }else{
-                reply_json(['error' => 'Access Denied']);
+                throw new \Exception('Access Denied');
             }
         } catch (\Exception $e) {
-            print_r($e->getMessage());
+            reply_json([
+                'status' => 'error',
+                'messages' => $e->getMessage()
+            ]);
         } 
     }
-
+    /** 
+     * 로그아웃 
+     * access token 정보를 blacklist db insert 
+     * header - Authorization
+    */
     public function logout(){
-        echo "logout";
+        try {
+            $headers = getallheaders();  
+            if(isset($headers['Authorization'])){
+                $accessToken = new AccessTokenModel();
+                $authHeader  = $headers['Authorization'];  
+                
+                // 이미 로그아웃처리가 되어 blacklist에 들어간 token인지 확인 
+                if($accessToken->isBlackList($authHeader))
+                    throw new \Exception('Authentication failed');
+
+                $payload = $accessToken->decode($authHeader);
+                if(!empty($payload)){
+                    $result=$accessToken->insertBlacklist($authHeader, $payload->exp);
+                    if($result>0){
+                        reply_json([
+                            "status" => "success",
+                            "message" => "logout"
+                        ]);
+                    }
+                }    
+            }else{
+                throw new \Exception('Authentication header not exists.');          
+            }
+        } catch (\Exception $e) {
+            reply_json([
+                'status' => 'error',
+                'messages' => $e->getMessage()
+            ]);
+        }
     }
-
-    public function jwt_test(){
-        $key = "example_key";
-        $payload = array(
-            "iss" => "http://example.org",
-            "aud" => "http://example.com",
-            "iat" => 1356999524,
-            "nbf" => 1357000000
-        );
-
-        $jwt = JWT::encode($payload, $key);
-        print_r($jwt);
-        $decoded = JWT::decode($jwt, $key, array('HS256'));
-        print_r($decoded);
+ 
+    /**
+     * 토큰 재발행 
+    */
+    public function refreshToken(){
+        try {
+            $headers = getallheaders();  
+            if(isset($headers['Authorization'])){
+                $accessToken = new AccessTokenModel();
+                $authHeader  = $headers['Authorization'];
+                $payload = $accessToken->decode($authHeader);
+                //$newToken = $accessToken->make($payload->sub);
+                //reply_json($newToken);
+            }else{
+                throw new \Exception('Authentication header not exists.');
+            }
+        } catch (\Exception $e) {
+            reply_json([
+                'status' => 'error',
+                'messages' => $e->getMessage()
+            ]);
+        }
     }
 }

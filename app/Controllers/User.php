@@ -2,19 +2,6 @@
 
 use App\Models\UserModel;
 use CodeIgniter\Controller;
-/**
- * TO DO LIST 
- * 1. create user API
- * 2. user login API
- * 3. user logout API
- * 4. user GET API
- * 5. user FETCH API - SERACH BY PAGENATION OR NAME OR EMAIL 
- * ----
- * login accesskey 
- * pw 암호화
- * login logout 처리는 무엇으로 할까? 
- * email name 부분검색 허용?
- */
 
 $debugmode = true;
 
@@ -27,52 +14,65 @@ function reply_json($s){
 
 class User extends Controller
 {
+    /**
+     * 회원 아이디를 이용하여 단일 회원 정보 가져오기 
+     */
     public function getbyid(){
         $params = $_REQUEST;
         try{
             if(!$params['id'])
-                throw new \Exception("needed valid params");
+                throw new \Exception("invalid_request");
             $model = new UserModel();
-            $data=$model->get($params['id']);
+            $user=$model->getbyid($params['id']);
 
-            if(empty($data['user']))
-                throw new \Exception('Cannot find the user');
+            if(empty($user))
+                throw new \Exception('Not Found');
 
-            reply_json($data);
+            reply_json($user);
         }catch(\Exception $e){
-            print_r($e->getMessage());
+            reply_json([
+                'status' => 'error',
+                'messages' => $e->getMessage()
+            ]);
         }    
-    }  
-
+    }
+    /**
+     *  여러 회원 목록 조회하기
+     *  페이지네이션으로 일정단위 조회 가능
+     *  이름, 이메일을 이용하여 검색 가능(부분검색x)
+    */  
     public function fetch(){
         try {
             $model = new UserModel();
             $users = $model->fetch($_REQUEST);
-            reply_json($users);
+            if(!empty($users))
+                reply_json($users);
+            else
+                throw new \Exception('Not Found');
         } catch (\Exception $e) {
-            print_r($e->getMessage());
+            reply_json([
+                'status' => 'error',
+                'messages' => $e->getMessage()
+            ]);
         }
     }
-
+    /**
+     * 신규 회원 생성하기 
+     * email 기준으로 회원 생성함   
+     */
     public function create(){
         $model = new UserModel();
-        $params = $_REQUEST;
-        $data = [
-            'name' => $params['name'],
-            'nickname'  => $params['nickname'],
-            'password'  => $params['password'], 
-            'tel'  => $params['tel'],
-            'email'  => $params['email'],
-            'gender'  => $params['gender']
-        ];
-        if ($model->save($data) === false){
-            echo reply_json(['errors' => $model->errors()]);
+        $stranger = $_REQUEST;
+        if ($model->save($stranger) === false){
+            reply_json([ 
+                'status' => 'error',
+                'message' => $model->errors()
+            ]);
         }else{
-            echo reply_json(['success' => '200']);
+            reply_json([
+                'status' => 'success',
+                'messages' => 'create new user. id: '.$model->insertID
+            ]);
         }       
-    }
-    //fetch
-    public function index(){
-        echo "index";
     }
 }

@@ -33,9 +33,10 @@ $routes->setAutoRoute(true);
 
 $routes->match(['get', 'post'], 'user/auth/logout', 'Auth::logout'); // 회원 로그아웃
 $routes->match(['get', 'post'], 'user/auth/login', 'Auth::login');  // 회원 로그인 
+$routes->match(['get', 'post'], 'user/auth/token/refresh', 'Auth::refreshToken'); // accesstoken refresh 
 $routes->match(['get', 'post'], 'user/create', 'User::create'); // 회원가입
 $routes->match(['get', 'post'], 'user/fetch', 'User::fetch'); // 여러 회원 목록 조회
-$routes->match(['get', 'post'], 'user/get', 'User::get'); // 단일 회원 상세 정보 조회 
+$routes->match(['get', 'post'], 'user/getbyid', 'User::getbyid'); // 단일 회원 상세 정보 조회 
 
 //$routes->get('/', 'Home::index');
 //$routes->get('user/(:segment)', 'User::view/$1');

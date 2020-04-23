@@ -1813,7 +1813,7 @@ class BaseBuilder
 		{
 			$this->limit($limit, $offset);
 		}
-
+	
 		$result = $this->testMode
 			? $this->getCompiledSelect($reset)
 			: $this->db->query($this->compileSelect(), $this->binds, false);
