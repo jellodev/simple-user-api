@@ -1,0 +1,13 @@
+CRITICAL - 2020-04-24 02:57:30 --> invalid request
+#0 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#1 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#2 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#3 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2020-04-24 02:59:12 --> Wrong parameters for Exception([string $message [, long $code [, Throwable $previous = NULL]]])
+#0 /application/app/Controllers/User.php(77): Exception->__construct()
+#1 /application/system/CodeIgniter.php(910): App\Controllers\User->create()
+#2 /application/system/CodeIgniter.php(398): CodeIgniter\CodeIgniter->runController()
+#3 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#4 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#5 {main}

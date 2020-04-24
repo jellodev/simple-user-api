@@ -39,7 +39,6 @@ class AccessTokenModel extends Model
             "token" => $accessToken, 
             "expireTime" => $exp
         ]);
-        print_r($result);
         return $result;
     }
 

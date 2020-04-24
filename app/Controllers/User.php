@@ -28,7 +28,10 @@ class User extends Controller
             if(empty($user))
                 throw new \Exception('Not Found');
 
-            reply_json($user);
+            reply_json([
+                'status' => 'success',
+                'user' => $user
+            ]);
         }catch(\Exception $e){
             reply_json([
                 'status' => 'error',
@@ -45,9 +48,12 @@ class User extends Controller
         try {
             $model = new UserModel();
             $users = $model->fetch($_REQUEST);
-            if(!empty($users))
-                reply_json($users);
-            else
+            if(!empty($users)){
+                reply_json([
+                    'status' => 'success',
+                    'users' => $users
+                ]);
+            }else
                 throw new \Exception('Not Found');
         } catch (\Exception $e) {
             reply_json([
@@ -61,18 +67,28 @@ class User extends Controller
      * email 기준으로 회원 생성함   
      */
     public function create(){
-        $model = new UserModel();
-        $stranger = $_REQUEST;
-        if ($model->save($stranger) === false){
-            reply_json([ 
-                'status' => 'error',
-                'message' => $model->errors()
-            ]);
-        }else{
+        try {
+            $model = new UserModel();
+            $stranger = $_REQUEST;
+            if(empty($stranger))
+                throw new \Exception('invalid request');
+    
+            if ($model->save($stranger) === false){
+                reply_json([
+                    'status' => 'error',
+                    'messages' => $model->errors()
+                ]);
+            }else{
+                reply_json([
+                    'status' => 'success',
+                    'messages' => 'create new user. id: '.$model->insertID
+                ]);
+            }   
+        } catch (\Exception $e) {
             reply_json([
-                'status' => 'success',
-                'messages' => 'create new user. id: '.$model->insertID
+                'status' => 'error',
+                'messages' => $e->getMessage()
             ]);
-        }       
+        }  
     }
 }

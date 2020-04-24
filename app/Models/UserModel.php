@@ -53,18 +53,15 @@ class UserModel extends Model
     }
     /**
      * 여러 회원 목록 조회 
-     * limit, offset, name, email 중 최소 1개의 파라미터가 포함되어야 조회가능 
+     * limit 기본값 1000
      * 페이징 검색, 이름, 이메일 검색(부분검색 허용x)
      */
     public function fetch($params){
-        if(empty($params))
-            throw new \Exception("invalid request");
-
         if(empty($params['limit']))
-            $params['limit'] = 0;
+            $params['limit'] = 1000;
         if(empty($params['offset']))
             $params['offset'] = 0;   
-
+        
         if(!empty($params['name']) && !empty($params['email'])){
             return $this->where(['name' => $params['name'], 'email' => $params['email']])
                 ->findAll($params['limit'], $params['offset']);
@@ -77,7 +74,7 @@ class UserModel extends Model
                 return $this->where(['email' => $params['email']])
                     ->findAll($params['limit'], $params['offset']);             
             }
-            return $this->findAll();
+            return $this->findAll($params['limit'], $params['offset']);
         }        
     
     }

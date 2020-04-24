@@ -93,8 +93,8 @@ class Auth extends Controller
                 $accessToken = new AccessTokenModel();
                 $authHeader  = $headers['Authorization'];
                 $payload = $accessToken->decode($authHeader);
-                //$newToken = $accessToken->make($payload->sub);
-                //reply_json($newToken);
+                $newToken = $accessToken->make($payload->sub);
+                reply_json($newToken);
             }else{
                 throw new \Exception('Authentication header not exists.');
             }
