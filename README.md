@@ -23,159 +23,245 @@ short_open_tag = On
 ```
 $ docker-compose up -d
 ```
-## user/get
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST` | http://localhost:18080/user/geybyid | JSON | 아이디로 단일회원 상세 정보 조회  
+# user/get
+아이디로 단일회원 상세 정보 조회  
 
-**REQUEST**
-필드 | 타입 | 필수 여부 | 설명 | 기본값 | 기타
--- | -- | -- | -- | -- | -- 
-id | Integer | Y | 사용자 고유 아이디 |  |  
+* URL
+http://localhost:18080/user/geybyid
 
-**RESOPONSE 예**
-```json
-{
-    "id": "1",
-    "name": "mihee",
-    "nickname": "mihee",
-    "password": "$2y$10$Wur5AddUJHWj8eghSz2dyu8LXHudFicNdrUC50B/4xwU573jO/hoK",
-    "tel": "01022341234",
-    "email": "test1@mail.com",
-    "gender": "M",
-    "creationtime": "2020-04-23 21:09:23"
-}
-```
-
-## user/fetch 
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST`| http://localhost:18080/user/fetch | JSON | 여러 회원 목록 정보 조회  | 
-
-**REQUEST**
-필드 | 타입 | 필수 여부 | 설명 | 기본값 | 기타 
--- | -- | -- | -- | -- | -- 
-name | String | N | 회원 이름 | |
-email | String | N | 회원 이메일 | | 
-limit | Int | N | 한번 조회 시 가져올 회원정보 로우의 갯수 | 1000 | 
-offset | Int | N | 앞서 생략할 회원정보 회원정보 로우의 갯수 | 0 | 
-
-**RESOPONSE 예**
-```json
-[
+* Method:  
+`GET` | `POST`
+* Params   
+  Required:  
+    `id=[Integer]`    
+    
+  Optional:   
+  
+* Success Response:
+    ```json
     {
-        "id": "1",
-        "name": "mihee",
-        "nickname": "mihee",
-        "password": "$2y$10$Wur5AddUJHWj8eghSz2dyu8LXHudFicNdrUC50B/4xwU573jO/hoK",
-        "tel": "01022341234",
-        "email": "test1@mail.com",
-        "gender": "M",
-        "creationtime": "2020-04-23 21:09:23"
-    },
-    {
-        "id": "2",
-        "name": "안자요",
-        "nickname": "mihee2",
-        "password": "$2y$10$yKkR9658dnK6iFvjeybX6eNlG2OIaCe414/Lr1JlGOdHCtaozn98G",
-        "tel": "01022341234",
-        "email": "test2@mail.com",
-        "gender": "F",
-        "creationtime": "2020-04-23 21:11:33"
+        "status": "success",
+        "user": {
+            "id": "3",
+            "name": "안자요",
+            "nickname": "mihee",
+            "password": "$2y$10$TM8oYiQHoXF3Zbrab346ZO3pKkhzmBWLqd6NBmBILOUzxHvbCBMT.",
+            "tel": "01022341234",
+            "email": "test3@mail.com",
+            "gender": "F",
+            "creationtime": "2020-04-23 21:26:03"
+        }
     }
-]
-```
+    ``` 
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "Undefined index: id"
+    }
+    ```
+    OR 
+     ```json
+     {
+        "status": "error",
+        "messages": "Not Found"
+     }
+     ```
 
-## user/create
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST`| http://localhost:18080/user/create  | JSON |  신규 회원정보 생성하기 
 
-**REQUEST**
-필드 | 타입 | 필수 여부 | 설명 | 기본값 | 기타
--- | -- | -- | -- | -- | -- 
-name | String | Y | 이름 | | 최대 길이 20자, 한글, 영문 대소문자  
-nickname | String | Y | 별명 | | 최대 길이 30자, 영문 소문자 
-password | String | Y | 비밀번호 | | 최소 길이 10자, 영문 대문자, 영문 소문자, 특수문자, 숫자 각 1개 이상씩 포함
-email | String | Y | 이메일 | | 최대 길이 100자
-tel | String | Y | 전화번호 | | 최대 길이 20자
-gender | String | N | 성별 | |  최대 길이 1자, 'F' or 'M' 값외에는 빈값처리 
+# user/fetch 
+여러 회원 목록 정보 조회
 
-**RESOPONSE 예**
-```json
-{"status":"success","messages":"create new user. id: 3"}
-```
+* Url   
+http://localhost:18080/user/fetch
 
-## user/login 
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST`| http://localhost:18080/user/lgoin   | JSON | 회원 로그인(인증)
+* Method  
+`GET` | `POST`  
 
-**REQUEST**
-필드 | 타입 | 필수 여부 | 설명 | 기본값 | 기타 
--- | -- | -- | -- | -- | --
-email | String | Y | 이메일 | | 
-password | Stirng | Y | 비밀번호 | |
+* Params   
+    Required:  
 
-**RESOPONSE 예**
-```json
-{"status":"success","accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M","tokenType":"Bearer","expireTime":1587680768}
-```
+    Optional:  
+        `name=[Stinrg]`  
+        `email=[String]`  
+        `limit=[Integer]` //기본값 1000  
+        `offset=[Integer]`  //기본값 0  
 
-## user/logout
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST`| http://localhost:18080/user/logout  | JSON |  회원 로그아웃 
+* Success Response:
+    ```json
+    {
+        "status": "success",
+        "users": [
+            {
+                "id": "1",
+                "name": "mihee",
+                "nickname": "mihee",
+                "password": "$2y$10$Wur5AddUJHWj8eghSz2dyu8LXHudFicNdrUC50B/4xwU573jO/hoK",
+                "tel": "01022341234",
+                "email": "test1@mail.com",
+                "gender": "M",
+                "creationtime": "2020-04-23 21:09:23"
+            },
+            {
+                "id": "2",
+                "name": "안자요",
+                "nickname": "mihee",
+                "password": "$2y$10$yKkR9658dnK6iFvjeybX6eNlG2OIaCe414/Lr1JlGOdHCtaozn98G",
+                "tel": "01022341234",
+                "email": "test2@mail.com",
+                "gender": "F",
+                "creationtime": "2020-04-23 21:11:33"
+            }
+        ]
+    }
+        ```
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "Not Found"
+    }
+    ```
 
-**REQUEST**
-요청 헤더
-요청 헤더명 | 설명 
--- | -- 
-Authorization | 접근 토큰(access token)을 전달하는 헤더
 
-요청 헤더 예
-```json
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
-```
+# user/create
+신규 회원정보 생성하기 
+* Url 
+http://localhost:18080/user/create  
 
-**RESOPONSE 예**
-```json
-{"status":"success","message":"logout"}
-```
+* Method:  
+`GET`| `POST`
+* Params  
+    Required:  
+        `name=[String]` //최대 길이 20자, 한글, 영문 대소문자  
+        `nickname=[String]`//최대 길이 30자, 영문 소문자  
+        `password=[String]` //최소 길이 10자, 영문 대문자, 영문 소문자, 특수문자, 숫자 각 1개 이상씩 포함  
+        `email=[String]` //최대 길이 100자  
+        `tel=[Integer]` //최대 길이 20자  
+        
+    Optional:  
+        `gender=[String]` //최대 길이 1자, ‘F’ or ‘M’ 값외에는 빈값처리  
 
-### user/token/refresh
-**API 기본정보**
-메서드 | 요청 URL | 출력 포맷 | 설명 
--- | --  |  -- | -- 
-`GET` `POST`| http://localhost:18080/user/token/refresh | JSON | accesstoken 갱신 
+* Success Response:  
+    ```json
+    {
+        "status": "success",
+        "messages": "create new user. id: 6"
+    }
+    ```
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "invalid request"
+    }
+    ```
+    OR 
+    ```json    
+    {
+        "status": "error",
+        "messages": {
+            "name": "The name field is not in the correct format.",
+            "nickname": "The nickname field is not in the correct format.",
+            "password": "The password field is not in the correct format.",
+            "email": "The email field must contain a unique value.",
+            "tel": "The tel field must only contain digits and must be greater than zero.",
+            "gender": "The gender field is not in the correct format."
+        }
+    }  
+    ``` 
+    
+# user/login 
+회원 로그인(인증)
+* Url 
+    http://localhost:18080/user/lgoin  
+* Method: 
+    `GET`| `POST`  
+* Params  
+    Required:  
+        `email=[String]`  
+        `password=[String]` 
+        
+    Optional:  
+* Success Response:  
+    ```json
+    {
+        "status": "success",
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjUiLCJpYXQiOjE1ODc3MTUzMTEsImV4cCI6MTU4NzcxODkxMX0.8lvtDRrHpazSGH6UWdM0NeVHz9xSrwNZnqeYsItLeJU",
+        "tokenType": "Bearer",
+        "expireTime": 1587718911
+    }
+    ```  
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "Not Found"
+    }
+    ```
 
-**REQUEST**
-요청 헤더
-요청 헤더명 | 설명 
--- | -- 
-Authorization | 접근 토큰(access token)을 전달하는 헤더
 
-요청 헤더 예
-```
-Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
-```
+# user/logout
+회원 로그아웃
+* Url  
+http://localhost:18080/user/logout 
+* Method: 
+`GET`|`POST`  
+* Header
+    `Authorization=접근 토큰(access token)을 전달하는 헤더`  
 
-**RESOPONSE 예**
-```json
-{
-    "status": "success",
-    "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjUiLCJpYXQiOjE1ODc3MTA2ODksImV4cCI6MTU4NzcxNDI4OX0.OJ6mn-kbWDDY4NAQMWAzXvC-Fut3gCOQXQowZYWg5MM",
-    "tokenType": "Bearer",
-    "expireTime": 1587714289
-}
-```
+    요청 헤더 예
+    ```
+    Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
+    ```
+* Success Response:
+    ```json
+    {
+        "status": "success",
+        "message": "logout"
+    }
+    ```
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "Authentication failed"
+    }
+    ```
+    
+# user/token/refresh
+accesstoken 갱신 
+* Url
+http://localhost:18080/user/token/refresh
+* Method:  
+`GET`|`POST`  
+* Header
+    `Authorization=접근 토큰(access token)을 전달하는 헤더`
+
+    요청 헤더 예
+    ```json
+    Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
+    ```
+* Success Response:
+    ```json
+    {
+        "status": "success",
+        "accessToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjUiLCJpYXQiOjE1ODc3MTA2ODksImV4cCI6MTU4NzcxNDI4OX0.OJ6mn-kbWDDY4NAQMWAzXvC-Fut3gCOQXQowZYWg5MM",
+        "tokenType": "Bearer",
+        "expireTime": 1587714289
+    }
+    ```
+* Error Response: 
+    ```json
+    {
+        "status": "error",
+        "messages": "Authentication failed"
+    }
+    ```
 
 ## Test 
 postman 이용
 [postman collection json](../bpker.postman_collection.json) 
+
+
 
