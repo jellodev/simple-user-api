@@ -4,6 +4,8 @@
 * Codeigniter 4 
 * Mac OS 
 
+👉 [테이블 생성 쿼리문](../master/Mysql_User.sql) 
+
 ## Getting Started
   
 ### docker 환경 셋팅 
@@ -268,7 +270,7 @@ http://localhost:18080/user/token/refresh
 
 ## Test 
 postman 이용
-[postman collection json](../bpker.postman_collection.json) 
+[postman collection json](../master/bpker.postman_collection.json) 
 
 
 
