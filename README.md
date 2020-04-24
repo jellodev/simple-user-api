@@ -23,21 +23,22 @@ short_open_tag = On
 ```
 $ docker-compose up -d
 ```
-# user/get
+## user/get
 아이디로 단일회원 상세 정보 조회  
 
-* URL
-http://localhost:18080/user/geybyid
+* **URL**  
+http://localhost:18080/user/getbyid
 
-* Method:  
+* **Method:**  
 `GET` | `POST`
-* Params   
-  Required:  
+
+* **Params**   
+  **Required:**  
     `id=[Integer]`    
     
-  Optional:   
+  **Optional:**   
   
-* Success Response:
+* **Success Response:**
     ```json
     {
         "status": "success",
@@ -53,7 +54,7 @@ http://localhost:18080/user/geybyid
         }
     }
     ``` 
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
@@ -69,25 +70,25 @@ http://localhost:18080/user/geybyid
      ```
 
 
-# user/fetch 
+## user/fetch 
 여러 회원 목록 정보 조회
 
-* Url   
+* **Url**   
 http://localhost:18080/user/fetch
 
-* Method  
+* **Method**  
 `GET` | `POST`  
 
-* Params   
-    Required:  
+* **Params**   
+    **Required:**  
 
-    Optional:  
+    **Optional:**  
         `name=[Stinrg]`  
         `email=[String]`  
         `limit=[Integer]` //기본값 1000  
         `offset=[Integer]`  //기본값 0  
 
-* Success Response:
+* **Success Response:**
     ```json
     {
         "status": "success",
@@ -115,7 +116,7 @@ http://localhost:18080/user/fetch
         ]
     }
         ```
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
@@ -124,32 +125,33 @@ http://localhost:18080/user/fetch
     ```
 
 
-# user/create
+## user/create
 신규 회원정보 생성하기 
-* Url 
+* **Url**  
 http://localhost:18080/user/create  
 
-* Method:  
+* **Method:**  
 `GET`| `POST`
-* Params  
-    Required:  
+
+* **Params**  
+    **Required:**  
         `name=[String]` //최대 길이 20자, 한글, 영문 대소문자  
         `nickname=[String]`//최대 길이 30자, 영문 소문자  
         `password=[String]` //최소 길이 10자, 영문 대문자, 영문 소문자, 특수문자, 숫자 각 1개 이상씩 포함  
         `email=[String]` //최대 길이 100자  
         `tel=[Integer]` //최대 길이 20자  
         
-    Optional:  
+    **Optional:**  
         `gender=[String]` //최대 길이 1자, ‘F’ or ‘M’ 값외에는 빈값처리  
 
-* Success Response:  
+* **Success Response:**  
     ```json
     {
         "status": "success",
         "messages": "create new user. id: 6"
     }
     ```
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
@@ -171,19 +173,21 @@ http://localhost:18080/user/create
     }  
     ``` 
     
-# user/login 
+## user/login 
 회원 로그인(인증)
-* Url 
-    http://localhost:18080/user/lgoin  
-* Method: 
+
+* **Url**   
+    http://localhost:18080/user/lgoin 
+    
+* **Method:**   
     `GET`| `POST`  
-* Params  
-    Required:  
+* **Params**  
+    **Required:**  
         `email=[String]`  
         `password=[String]` 
         
-    Optional:  
-* Success Response:  
+    **Optional:**  
+* **Success Response:**  
     ```json
     {
         "status": "success",
@@ -192,7 +196,7 @@ http://localhost:18080/user/create
         "expireTime": 1587718911
     }
     ```  
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
@@ -201,27 +205,28 @@ http://localhost:18080/user/create
     ```
 
 
-# user/logout
+## user/logout
 회원 로그아웃
-* Url  
+* **Url**     
 http://localhost:18080/user/logout 
-* Method: 
+
+* **Method:**   
 `GET`|`POST`  
-* Header
+* **Header**
     `Authorization=접근 토큰(access token)을 전달하는 헤더`  
 
-    요청 헤더 예
+    **요청 헤더 예**
     ```
     Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
     ```
-* Success Response:
+* **Success Response:**
     ```json
     {
         "status": "success",
         "message": "logout"
     }
     ```
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
@@ -229,20 +234,22 @@ http://localhost:18080/user/logout
     }
     ```
     
-# user/token/refresh
+## user/token/refresh
 accesstoken 갱신 
-* Url
+* **Url**  
 http://localhost:18080/user/token/refresh
-* Method:  
-`GET`|`POST`  
-* Header
+
+* **Method:**   
+`GET`|`POST` 
+
+* **Header**
     `Authorization=접근 토큰(access token)을 전달하는 헤더`
 
-    요청 헤더 예
+    **요청 헤더 예**
     ```json
     Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjMiLCJpYXQiOjE1ODc2NzcxNjgsImV4cCI6MTU4NzY4MDc2OH0.v1t5tkYVdQ2XMN2fpM-xCSyzcr0pw0r0CSGJ4jIdo0M
     ```
-* Success Response:
+* **Success Response:**
     ```json
     {
         "status": "success",
@@ -251,7 +258,7 @@ http://localhost:18080/user/token/refresh
         "expireTime": 1587714289
     }
     ```
-* Error Response: 
+* **Error Response:** 
     ```json
     {
         "status": "error",
