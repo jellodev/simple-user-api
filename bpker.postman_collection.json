@@ -1,0 +1,310 @@
+{
+	"info": {
+		"_postman_id": "71ef873c-52da-4da9-a8ba-23b3f3a2cba6",
+		"name": "bpker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "limit",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "offset",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:18080/user/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"fetch"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "2",
+							"disabled": true
+						},
+						{
+							"key": "offset",
+							"value": "0",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "test1@mail.com",
+							"disabled": true
+						},
+						{
+							"key": "name",
+							"value": "안자요",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbyid",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "id",
+							"value": "3",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:18080/user/getbyid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"getbyid"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjQiLCJpYXQiOjE1ODc3MTA1MDEsImV4cCI6MTU4NzcxNDEwMX0.9EJlepK2RpObVF5LPwerHsBJ9nywswmEOIugG-cUC7s",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:18080/user/auth/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "jangwoo@naver.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "alalalal1A121212!",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:18080/user/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"auth",
+						"login"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "jangwoo@naver.com",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "alalalal1A121212!",
+							"disabled": true
+						},
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "김유장",
+							"type": "text"
+						},
+						{
+							"key": "nickname",
+							"value": "youuyouu",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "youyouYYY12!",
+							"type": "text"
+						},
+						{
+							"key": "tel",
+							"value": "010892934521",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "jello222@hanmail.net",
+							"type": "text"
+						},
+						{
+							"key": "gender",
+							"value": "b",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:18080/user/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"create"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "김장우",
+							"disabled": true
+						},
+						{
+							"key": "nickname",
+							"value": "heyhey",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "alalalal1A121212!",
+							"disabled": true
+						},
+						{
+							"key": "gender",
+							"value": "F",
+							"disabled": true
+						},
+						{
+							"key": "tel",
+							"value": "010223433333",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "jangwoo@naver.com",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refreshToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJtaWhlZSIsInN1YiI6IjUiLCJpYXQiOjE1ODc3MTA2NTYsImV4cCI6MTU4NzcxNDI1Nn0.iXOUnXvhevVer4Fdsy1dCucZTDGvQ6-Ls-DAaDZlFOc",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:18080/user/auth/token/refresh",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "18080",
+					"path": [
+						"user",
+						"auth",
+						"token",
+						"refresh"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
