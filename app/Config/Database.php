@@ -31,7 +31,7 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $default = [
 		'DSN'      => '',
-		'hostname' => '172.21.0.3',
+		'hostname' => '172.20.0.4', // 고정아이피로 설정하는 방법을 찾아보자.. 
 		'username' => 'user',
 		'password' => 'nicebpker',
 		'database' => 'user',
@@ -59,7 +59,7 @@ class Database extends \CodeIgniter\Database\Config
 	 */
 	public $tests = [
 		'DSN'      => '',
-		'hostname' => '172.21.0.3',
+		'hostname' => '172.20.0.4',
 		'username' => 'user',
 		'password' => 'nicebpker',
 		'database' => 'user',
