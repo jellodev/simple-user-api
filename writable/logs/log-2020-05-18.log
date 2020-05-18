@@ -1,0 +1,78 @@
+CRITICAL - 2020-05-18 06:43:42 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:43:50 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:45:11 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:45:23 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:45:30 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:47:12 --> Class 'App\Controllers\Controllerx' not found
+#0 /application/system/Autoloader/Autoloader.php(365): require_once()
+#1 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#2 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#4 [internal function]: spl_autoload_call()
+#5 /application/system/CodeIgniter.php(861): class_exists()
+#6 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#7 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#8 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2020-05-18 06:54:26 --> Undefined variable: i
+#0 /application/app/Controllers/User.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /application/system/Autoloader/Autoloader.php(365): require_once('/application/ap...')
+#2 /application/system/Autoloader/Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->requireFile()
+#3 /application/system/Autoloader/Autoloader.php(258): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+#4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+#5 [internal function]: spl_autoload_call()
+#6 /application/system/CodeIgniter.php(861): class_exists()
+#7 /application/system/CodeIgniter.php(388): CodeIgniter\CodeIgniter->startController()
+#8 /application/system/CodeIgniter.php(306): CodeIgniter\CodeIgniter->handleRequest()
+#9 /application/public/index.php(45): CodeIgniter\CodeIgniter->run()
+#10 {main}

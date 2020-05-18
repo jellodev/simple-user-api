@@ -5,8 +5,8 @@ use CodeIgniter\Controller;
 
 $debugmode = true;
 
-if($debugmode)
-    error_reporting(E_ALL); ini_set("display_errors", 1);
+if($debugmode) 
+    error_reporting(E_ALL); ini_set("display_errors", 1);  //[error_reporting] 오류수준을 설정함 E_ALL은 모든 오류 , [ini_set] 화면에 error 표시 true  
 
 function reply_json($s){
     echo json_encode($s, JSON_UNESCAPED_UNICODE);
